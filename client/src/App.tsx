@@ -7,6 +7,8 @@ import New from "./pages/New/New";
 import Men from "./pages/Men/Men";
 import Women from "./pages/Women/Women";
 import Kids from "./pages/Kids/Kids";
+import Signup from "./pages/Auth/Signup";
+import Signin from "./pages/Auth/Signin";
 function App() {
   return (
       <BrowserRouter>
@@ -14,16 +16,17 @@ function App() {
               <div>
                   <Header/>
                   <Routes>
-                      <Route path="/home" element={<Home/>}/>
-                      <Route path="/New" element={<New/>}/>
-                      <Route path="/Men" element={<Men/>}/>
-                      <Route path="/Women" element={<Women/>}/>
-                      <Route path="/Kids" element={<Kids/>}/>
+                      <Route path="/" element={<Home/>}/>
+                      <Route path="/new" element={<New/>}/>
+                      <Route path="/men" element={<Men/>}/>
+                      <Route path="/women" element={<Women/>}/>
+                      <Route path="/kids" element={<Kids/>}/>
+                      <Route path="/signup" element={<Signup/>}/>
+                      <Route path="/signin" element={<Signin/>}/>
                   </Routes>
               </div>
           </div>
       </BrowserRouter>
   );
 }
-
 export default App;

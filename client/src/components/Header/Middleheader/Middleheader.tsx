@@ -1,11 +1,12 @@
 import React from 'react';
 import Logo from "./Logo/Logo";
 import Navbar from "./Navbar/Navbar";
-import s from "./Header.module.css"
-const Header = () => {
+import s from "./Middleheader.module.css"
+
+const Middleheader = () => {
     return (
-        <div>
-            <div className={s.wrapper}>
+        <div className={s.header}>
+            <div className={s.inner}>
                 <Logo/>
                 <Navbar/>
             </div>
@@ -13,4 +14,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Middleheader;

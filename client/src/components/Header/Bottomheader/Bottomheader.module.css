@@ -1,0 +1,14 @@
+.header {
+    height: 58px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-decoration: underline;
+    font-size: 12px;
+}
